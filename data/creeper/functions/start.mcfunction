@@ -18,6 +18,7 @@ scoreboard objectives add 20 dummy
 execute as @a[tag=oni,limit=1] run summon armor_stand ~ ~3 ~ {Tags:["Controller","timer"]}
 scoreboard players set @e[tag=timer] timerT 25200
 scoreboard players set @e[tag=timer] 20 20
+scoreboard players set @a deaths 0
 
 title @a[tag=oni] subtitle {"text":"あなたは鬼です！","color":"aqua"}
 title @a[tag=hito] subtitle {"text":"逃げてください！","color":"aqua"}
