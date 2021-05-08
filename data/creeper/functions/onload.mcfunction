@@ -1,3 +1,3 @@
 gamerule maxCommandChainLength 32767
-tellraw @a "[鬼ごっこ]: なうろーでぃんぐ"
+tellraw @a "[クリーパー鬼ごっこ]: なうろーでぃんぐ"
 kill @e[tag=Controller]
