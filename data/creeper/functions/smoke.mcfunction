@@ -1,0 +1,3 @@
+execute as @e[type=area_effect_cloud,nbt={Effects:[{Id:26b}]}] at @e[type=area_effect_cloud,nbt={Effects:[{Id:26b}]}] run particle campfire_signal_smoke ~ ~ ~ 3 3 3 0 1500
+execute as @e[type=area_effect_cloud,nbt={Effects:[{Id:26b}]}] at @e[type=area_effect_cloud,nbt={Effects:[{Id:26b}]}] run particle campfire_signal_smoke ~ ~ ~ 3 3 3 0.01 1500
+execute as @e[type=area_effect_cloud,nbt={Effects:[{Id:26b}]}] run kill @s
