@@ -16,7 +16,8 @@ replaceitem entity @a[scores={deaths=1}] armor.head creeper_head
 replaceitem entity @a[tag=oni] armor.head creeper_head
 
 kill @e[type=arrow,nbt={OnGround:true},tag=!t]
-kill @e[type=item]
+kill @e[type=item,nbt={Item:{id:"minecraft:redstone"}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:gunpowder"}}]
 
 scoreboard players reset @a GUNPOWDER
 scoreboard players reset @a REDSTONE
