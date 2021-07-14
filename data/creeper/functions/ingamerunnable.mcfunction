@@ -9,15 +9,15 @@ execute if entity @a[scores={gankou=1..}] run function creeper:veyes
 execute as @a[scores={REDSTONE=1..}] at @s run function creeper:explosion
 execute as @a[scores={GUNPOWDER=1..}] at @s run function creeper:explosion
 
-give @a[scores={deaths=1},nbt=!{Inventory:[{id:"minecraft:gunpowder"}]}] gunpowder
-give @a[scores={REDSTONE=1..}] redstone
-
 replaceitem entity @a[scores={deaths=1}] armor.head creeper_head
 replaceitem entity @a[tag=oni] armor.head creeper_head
 
 kill @e[type=arrow,nbt={OnGround:true},tag=!t]
 kill @e[type=item,nbt={Item:{id:"minecraft:redstone"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:gunpowder"}}]
+
+give @a[scores={deaths=1},nbt=!{Inventory:[{id:"minecraft:gunpowder"}]}] gunpowder
+give @a[scores={REDSTONE=1..}] redstone
 
 scoreboard players reset @a GUNPOWDER
 scoreboard players reset @a REDSTONE
